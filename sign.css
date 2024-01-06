@@ -10,6 +10,10 @@
   --gray5-color: #f0f6ff;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Pretendard';
   background-color: var(--gray5-color); 
@@ -47,6 +51,7 @@ body {
 }
 
 .form-container {
+  width: 400px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -59,7 +64,7 @@ body {
   flex-direction: column;
   width: 400px;
   gap: 12px;
-  position: relative;
+  
 }
 
 
@@ -68,6 +73,7 @@ body {
 }
 
 .input-container input {
+  width: 100%;
   padding: 18px 15px;
   border-radius: 8px;
   border: 1px solid var(--gray3-color);
@@ -123,18 +129,10 @@ input:focus {
 
 .ps-container {
   position: relative;
-}
+} 
 
 .ps-container img {
   position: absolute;
   top: 35%;
-  left: 90%;
-}
-
-.ps-container input {
-  padding-right: 215px;
-}
-
-.ps-container img:active {
-  display: none;
+  right: 15px;
 }
